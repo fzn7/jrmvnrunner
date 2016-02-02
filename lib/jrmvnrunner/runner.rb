@@ -134,7 +134,7 @@ module Jrmvnrunner
       end
       log "Installing bundle..."
       res = `"#{cmd_path("bundle")}" install --gemfile #{gem_file}`
-      raise "Cannot install bundle: \n #{res}" unless res =~ /Your bundle is complete!/
+      raise "Cannot install bundle: \n #{res}" unless res =~ /Bundle complete!/
     end
 
     def maven_build!
